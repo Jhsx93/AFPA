@@ -61,3 +61,47 @@
 .color3 {
     background-color: red;
 }
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size : 30px; 
+    }
+    .Logo h1{
+        left: 0;
+    } 
+}     
+
+img 
+{
+     max-width: 100%;
+     height: auto;
+}
+
+@media screen and (max-width: 768px)
+{ 
+    .side
+    {display: none;}
+    .liens
+    {
+        display: block;
+        text-align: center;
+    }
+   html {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 450px)
+{ 
+    .side
+    {display: none;}
+    .liens
+    {
+        display: block;
+        text-align: center;
+    }
+   html {
+    font-size: 15px;
+   }
+}
