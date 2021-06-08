@@ -271,9 +271,74 @@
 
 // *************************************************************************************************************************************
 
-// Exercice 10.2
+// // Exercice 10.2
+
+// // Déclaration des fonctions
+
+// //une fonction GetInteger pour lire un entier au clavier,
+// function getInteger(message) {
+//     return parseInt(prompt(message))
+// }
+
+// // une fonction InitTab pour créer et initialiser l’instance de tableau : le nombre de postes souhaité sera entré au clavier,
+// function initTab() {
+//     var taille = getInteger("Quelle est la taille du tableau :")
+//     var tableau = Array(taille)
+//     return tableau
+// }
+
+// // une fonction SaisieTab pour permettre la saisie des différents postes du tableau,
+// function saisieTab(tableau) {
+//     for (i = 0; i < tableau.length; i++) {
+//         tableau[i] = getInteger("Entrez du contenu pour le tableau")
+//     }
+// }
+// // une fonction AfficheTab pour afficher tous les postes du tableau,
+// function afficheTab(tableau) {
+//     document.write("Les éléments du tableau sont :")
+//     for (i = 0; i < tableau.length; i++) {
+//         if (i == tableau.length-1) {
+//             document.write(tableau[i])
+//         } else {
+//             document.write(tableau[i] + ", ")
+//         }
+//     }
+// }
+// // une fonction RechercheTab pour afficher le contenu d’un poste de tableau dont le rang est saisi au clavier
+// function rechercheTab(tableau) {
+//     var longueurTableau = tableau.length-1
+//     var rang = getInteger("Ecrivez un chiffre entre 0 et " + longueurTableau)
+//     document.write("La valeur de l'élément est de : " + tableau[rang])
+// }
+// //une fonction InfoTab qui affichera le maximum et la moyenne des postes.
+// function infoTab(tableau) {
+//     var somme = 0
+    
+//     for (i = 0; i < tableau.length; i++) {
+//         somme += tableau[i] 
+//     }
+//     var moyenne = somme / tableau.length
 
 
+//     document.write("La moyenne des éléments est :" + moyenne)
+//     document.write("<br>L'élément avec la plus grande valeur est : " + Math.max(...tableau) )
+// }
+
+// //Créer le programme qui fournira un menu permettant de : afficher du contenu de tous les postes du tableau, Affichage du contenu d’un poste dont l’index est saisi au clavier, Affichage du maximum et de la moyenne des postes du tableau
+
+// recette = initTab()
+
+// saisieTab(recette)
+
+// var choix = getInteger("-Si vous voulez afficher tous les éléments du tableau écrivez 1\n-Si vous voulez afficher un élément du tableau écrivez 2\n-Si vous voulez afficher le maximum et la moyenne des éléments écrivez 3")
+
+// if (choix == 1) {
+//     afficheTab(recette)
+// } else if (choix == 2) {
+//     rechercheTab(recette)    
+// } else if (choix == 3) {
+//     infoTab(recette)
+// }
 
 
 
