@@ -1,4 +1,9 @@
 
+
+//--------------------------------------------------------------------------------------
+// LES EXERCICES EVALUATION SE TROUVENT A PARTIR DE LA LIGNE 400
+//--------------------------------------------------------------------------------------
+
 // //--Exercice 05 Afficher du texte
 
 // // Déclaration des variables
@@ -273,7 +278,7 @@
 
 // // Exercice 10.2
 
-// // Déclaration des fonctions
+// //Déclaration des fonctions
 
 // //une fonction GetInteger pour lire un entier au clavier,
 // function getInteger(message) {
@@ -340,9 +345,6 @@
 //     infoTab(recette)
 // }
 
-
-
-
 // ***********************************************************************************************************************************
 
 // Exercice 10.3
@@ -365,3 +367,134 @@
 // for (var ind01 = 0; ind01 < Tableau.length;ind01++) {
 //     document.write(Tableau[ind01])
 // }
+//
+// *******************************************************************************
+
+// // Exercice 13 Les objets natifs
+
+// var tableau = Array()
+// var somme = 0
+
+// do {
+//     nb = parseInt(prompt("Entrez du contenu pour le tableau"))
+//     tableau.push(nb)
+// } while (nb != "0");
+
+//  for (i = 0; i < tableau.length; i++) {
+//      somme += tableau[i] 
+//     }
+//     var moyenne = somme / tableau.length
+
+
+
+// console.log(tableau);
+// console.log(moyenne);
+// console.log(somme);
+
+// **************************************************************************************
+
+
+
+
+//--------------------------------------------------------------------------------------
+// Evaluation Javascript
+//--------------------------------------------------------------------------------------
+
+// Exercice 1 calcul du nombre de jeunes, de moyens et de vieux
+
+// // 3 tableaux pour différencier les tranches d'ages
+
+// var jeunes  = Array()
+// var moyens = Array()
+// var vieux = Array()
+
+// // Ages entrés par l'User de 1 a infini puis affectation au tableau concernés par la tranche saisie
+
+// do {
+//     nb = parseInt(prompt("Entrez des âges de 1 à +100 ans"))
+//     if (nb < 20) {
+//         jeunes.push(nb)
+//     } else if  (nb >= 20 && nb <= 40) {
+//         moyens.push(nb)
+//     } else {
+//         vieux.push(nb) 
+//     }
+//     } while (nb < "100");
+
+// // Résultats 
+
+// console.log(" Nombre de jeunes : " + jeunes.length + " (" + jeunes + ")");
+// console.log("Nombre de moyens : " + moyens.length + " (" + moyens + ")");
+// console.log(" Nombre de vieux : " + vieux.length + " (" + vieux + ")");
+
+// ***************************************************************************************
+
+// Exercice 2 table de multiplication
+
+//// Fonction génération table multiplication
+
+// function tableMultiplication(n) {
+//     for (let i = 0; i <= 10 ; i++) {
+//         var produit = i * n 
+//         document.write(i+" x "+n+" = "+produit+"<br>");
+//     }    
+// }
+
+//// Saisi manuelle du paramètre de la fonction pour générer la table
+
+// tableMultiplication(10)
+
+// ****************************************************************************************
+
+// // Exercice 3
+
+// // Déclarations variables / tableau
+// var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+// var recherche = prompt('Saisissez un prénom')
+
+// // Condition qui recherche si le prénom rentré par l'User est dans le tableau, si c'est le cas l'élément est supprimé du tableau et un élément vide est ajouté.
+
+// if (tab.indexOf(recherche)>=0) {
+//     var target = tab.indexOf(recherche)
+//     tab.splice(target,1)
+//     tab.push(" ")
+// } else {
+//     alert("Le prénom n'est pas dans la liste")
+// }
+
+// console.log(tab);
+
+// *********************************************************************************************
+
+// Exercice 4
+
+var PU = parseInt (prompt("Indiquez un prix unitaire"))
+var QTECOM = parseInt (prompt("Indiquez une quantité"))
+var REMT
+var PORTT
+var TOT = PU * QTECOM
+
+
+
+if (TOT >= "100" && TOT <= "200") {
+    REMT = 0.95
+} else if (TOT > "200") {
+    REMT = 0.90
+}
+
+if (TOT * REMT > "500" ) {
+    PORTT = 0
+} else {
+    PORTT = 0.02
+}
+
+var REM = TOT * REMT
+var PORT = TOT * PORTT
+var PAP = TOT - REM + PORT
+
+console.log(TOT);
+console.log(REMT);
+console.log(PORTT);
+console.log(REM);
+console.log(PORT);
+console.log(PAP);
