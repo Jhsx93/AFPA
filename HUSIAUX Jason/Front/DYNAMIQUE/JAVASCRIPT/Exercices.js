@@ -468,33 +468,36 @@
 
 // Exercice 4
 
-var PU = parseInt (prompt("Indiquez un prix unitaire"))
-var QTECOM = parseInt (prompt("Indiquez une quantité"))
-var REMT
-var PORTT
-var TOT = PU * QTECOM
+// // A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT
+// var PU = parseInt (prompt("Indiquez un prix unitaire"))
+// var QTECOM = parseInt (prompt("Indiquez une quantité"))
+// var REM
+// var PORT
+// var TOT = PU * QTECOM
 
+// if (TOT >= "100" && TOT <= "200") {
+//     REM = 0.05 * TOT
+// } else if (TOT > "200") {
+//     REM = 0.10 * TOT
+// } else {
+//     REM = 0
+// }
 
+// if (TOT - REM > "500" ) {
+//     PORT = 0
+// } else {
+//     PORT = 0.02 * (TOT - REM)
+// }
 
-if (TOT >= "100" && TOT <= "200") {
-    REMT = 0.95
-} else if (TOT > "200") {
-    REMT = 0.90
-}
+// if (PORT < 6) {
+//     PORT = 6
+// }
 
-if (TOT * REMT > "500" ) {
-    PORTT = 0
-} else {
-    PORTT = 0.02
-}
+// var PAP = TOT + PORT - REM
 
-var REM = TOT * REMT
-var PORT = TOT * PORTT
-var PAP = TOT - REM + PORT
+// console.log("Ceci est le total : " + TOT + "€");
+// console.log("Ceci est la remise : " + REM + "€");
+// console.log("Ceux ci sont les frais de port : " + PORT + "€");
+// console.log("Ceci est le prix total a payer incluant remise et port : " + PAP + "€");
 
-console.log(TOT);
-console.log(REMT);
-console.log(PORTT);
-console.log(REM);
-console.log(PORT);
-console.log(PAP);
+// ********************************************************************************************************
