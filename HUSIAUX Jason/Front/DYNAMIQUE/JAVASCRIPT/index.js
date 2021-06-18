@@ -27,17 +27,17 @@ const regCodePostal = /^[0-9]{5}$/
 
 form.addEventListener("submit", (e) => {
     if (nom.value == "" || nom.value == null || regularName.test(nom.value) == false) {
-        errorName.innerHTML= "Veuillez renseigner votre nom"
+        errorName.innerHTML = "Veuillez renseigner votre nom"
         e.preventDefault();
         nom.value = "";
     }
     if (prenom.value == "" || prenom.value == null || regularName.test(prenom.value) == false) {
-        errorLastName.innerHTML= "Veuillez renseigner votre prenom"
+        errorLastName.innerHTML = "Veuillez renseigner votre prenom"
         e.preventDefault();
         prenom.value = "";
     }
     if (radioMale.checked == false && radioFemale.checked == false) {
-        errorSexe.innerHTML= "Veuillez selectionner le sexe"
+        errorSexe.innerHTML = "Veuillez selectionner le sexe"
         e.preventDefault();
     }
     if (ddn.value.match(regDate) > annéeActuelle || ddn.value == null || ddn.value == "") {
@@ -55,7 +55,7 @@ form.addEventListener("submit", (e) => {
     if (subject.value == "" || subject.value == null) {
         errorSubject.innerHTML = "Veuillez choisir un sujet"
         e.preventDefault();
-        
+
     }
     if (question.value == "" || question.value == null) {
         errorQuestion.innerHTML = "Veuillez renseigner votre question"
@@ -65,14 +65,14 @@ form.addEventListener("submit", (e) => {
         errorCheckbox.innerHTML = "Veuillez cocher la case"
         e.preventDefault();
     }
-    
 
-    
+
+
 
 })
 
-form.addEventListener('reset', ()=>{
-    errorName.textContent= "";
+form.addEventListener('reset', () => {
+    errorName.textContent = "";
     errorLastName.textContent = "";
     errorSexe.textContent = "";
     errorDdn.textContent = "";
@@ -82,5 +82,3 @@ form.addEventListener('reset', ()=>{
     errorQuestion.textContent = "";
     errorCheckbox.textContent = "";
 })
-
-

@@ -1,5 +1,3 @@
-
-
 //--------------------------------------------------------------------------------------
 // LES EXERCICES EVALUATION SE TROUVENT A PARTIR DE LA LIGNE 400
 //--------------------------------------------------------------------------------------
@@ -106,15 +104,15 @@
 //             case "+":
 //                 window.alert(nbr1 + nbr2)
 //                 break;
-        
+
 //             case "-":
 //                 window.alert(nbr1 - nbr2)
 //                 break;
-            
+
 //             case "*":
 //                 window.alert(nbr1 * nbr2)
 //                 break;
-            
+
 //             case "/":
 //                 if ((nbr2 == 0)) {
 //                     window.alert("Veuillez choisir un autre chiffre afin de ne pas diviser par 0")
@@ -255,7 +253,7 @@
 //     var mot = str1.split(str2)
 //     console.log(mot[n]);
 //     }
-    
+
 // strtok(str1, str2, n);
 
 // ********************************************************************************************************************************
@@ -266,10 +264,10 @@
 // var tableau = Array(taille)
 
 
- 
+
 //     for (let i = 0; i < tableau.length; i++) {
 //         tableau[i] =  prompt("Entrez du contenu pour le tableau")
-        
+
 //     }
 
 // document.write("Les valeurs contenues dans le tableau sont : "+tableau);
@@ -318,7 +316,7 @@
 // //une fonction InfoTab qui affichera le maximum et la moyenne des postes.
 // function infoTab(tableau) {
 //     var somme = 0
-    
+
 //     for (i = 0; i < tableau.length; i++) {
 //         somme += tableau[i] 
 //     }
